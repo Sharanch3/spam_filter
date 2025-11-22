@@ -9,9 +9,6 @@ from nlp_preprocessor import nlp_pipeline
 model = pickle.load(gzip.open('./artifacts/model.pkl.gz', 'rb'))
 tfidf = pickle.load(gzip.open('./artifacts/vectorizer.pkl.gz', 'rb'))
 
-#Load nlp model
-nlp = spacy.load("en_core_wb_sm")
-
 
 st.set_page_config(page_title="Spam Classifier", page_icon="📩", layout='centered')
 st.title("📩 Spam Classifier")
