@@ -2,11 +2,15 @@ import pickle
 import gzip
 import streamlit as st
 import pandas as pd
+import spacy
 from nlp_preprocessor import nlp_pipeline
 
 # Load pickle files
 model = pickle.load(gzip.open('./artifacts/model.pkl.gz', 'rb'))
 tfidf = pickle.load(gzip.open('./artifacts/vectorizer.pkl.gz', 'rb'))
+
+#Load nlp model
+nlp = spacy.load("en_core_wb_sm")
 
 
 st.set_page_config(page_title="Spam Classifier", page_icon="📩", layout='centered')
