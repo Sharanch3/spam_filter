@@ -12,7 +12,7 @@ A machine learning-powered web application that classifies SMS messages as spam 
 
 ## 🚀 Live Demo
 
-[Add your Streamlit Cloud link here]
+**🌐 Link**: --- https://sms-spamfilter.streamlit.app/
 
 ## 📈 Model Training
 
